@@ -1,4 +1,4 @@
-# Sitecore.Ship
+# Sitecore.ShipIt (fork compatible with Sitecore 9)
 
 [![Join the chat at https://gitter.im/kevinobee/Sitecore.Ship](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/kevinobee/Sitecore.Ship?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -30,12 +30,7 @@ Ensure that the web.config file for the target project if already existing is in
 
 Run the following powershell command in the package manager console of the Visual Studio solution for the target website:
 
-    PM:> install-package Sitecore.Ship
-
-or 
-
-    PM:> install-package Sitecore.Ship.AspNet
-
+    PM:> install-package SitecoreShipIt
 
 Installing the package will do the following:
 
