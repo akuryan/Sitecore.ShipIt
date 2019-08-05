@@ -1,4 +1,4 @@
-# Sitecore.ShipIt (fork compatible with Sitecore 9)
+# Sitecore.ShipIt (Sitecore.Ship fork compatible with Sitecore 9)
 
 [![Join the chat at https://gitter.im/kevinobee/Sitecore.Ship](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/kevinobee/Sitecore.Ship?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
