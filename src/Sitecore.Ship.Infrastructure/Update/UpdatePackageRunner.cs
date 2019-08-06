@@ -41,15 +41,14 @@ namespace Sitecore.Ship.Infrastructure.Update
                 try
                 {
                     var installer = new DiffInstaller(UpgradeAction.Upgrade);
+                    bool hasPostAction = false;
                     using (new SecurityDisabler())
                     {
-                      bool flag;
-                      entries = installer.InstallPackage(installationInfo.Path, installationInfo.Mode, logger, new List<ContingencyEntry>(), string.Empty, out flag, ref historyPath);
+                      entries = installer.InstallPackage(installationInfo.Path, installationInfo.Mode, logger, out hasPostAction, out historyPath);
                     }
 
-                    string error = string.Empty;
                     logger.Info("Executing post installation actions.");
-                    MetadataView metadata = PreviewMetadataWizardPage.GetMetadata(packagePath, out error);
+                    MetadataView metadata = PreviewMetadataWizardPage.GetMetadata(packagePath, out var error);
 
                     if (string.IsNullOrEmpty(error))
                     {
